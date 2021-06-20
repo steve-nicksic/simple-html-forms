@@ -6,69 +6,92 @@
         <title>HTML Forms</title>
     </head>
     <body>
-        <!-- Signup Form -->
-        <form action="index.html" method="post">
-            <h1>Signup</h1>
-            <fieldset>
+        <main>
+            <section>
+                <!-- Signup Form -->
+                <form action="index.html" method="post">
+                    <h1>Signup</h1>
+                    <fieldset>
 
-                <legend><em>Personal Information</em></legend>
+                        <legend><em>Personal Information</em></legend>
 
-                <label for="firstname"><strong>Name:</strong></label><br>
-                <input type="text" id="first_name" name="user_firstname"><br><br>
+                        <label for="firstname"><strong>Name:</strong></label><br>
+                        <input type="text" id="first_name" name="user_firstname"><br><br>
 
-                <label for="lastname"><strong>Last Name:</strong></label><br>
-                <input type="text" id="last_name" name="user_lastname"><br><br>
+                        <label for="lastname"><strong>Last Name:</strong></label><br>
+                        <input type="text" id="last_name" name="user_lastname"><br><br>
 
-                <label for="birthdate"><strong>Date of Birth:</strong></label><br>
-                <input type="date" id="birthdate" name="user_birthdate"><br><br>
+                        <label for="birthdate"><strong>Date of Birth:</strong></label><br>
+                        <input type="date" id="birthdate" name="user_birthdate"><br><br>
 
-                <label><strong>Gender:</strong></label><br>
-                <input type="radio" id="female" value="female" name="user_gender"><label for="female">Female</label>
-                <input type="radio" id="male" value="male" name="user_gender"><label for="male">Male</label><br><br>
+                        <label><strong>Gender:</strong></label><br>
+                        <input type="radio" id="female" value="female" name="user_gender"><label for="female">Female</label>
+                        <input type="radio" id="male" value="male" name="user_gender"><label for="male">Male</label><br><br>
 
-                <label for="phone"><strong>Phone Number:</strong></label><br>
-                <input type="tel" id="phone_number" name="user_phone"><br>
+                        <label for="phone"><strong>Phone Number:</strong></label><br>
+                        <input type="tel" id="phone_number" name="user_phone"><br>
 
-                <p><strong>Address:</strong></p>
+                        <p><strong>Address:</strong></p>
 
-                <label for="streetaddress"><strong>Street Address:</strong></label><br>
-                <input type="text" name="user_streetaddress" id="streetaddress"><br><br>
+                        <label for="streetaddress"><strong>Street Address:</strong></label><br>
+                        <input type="text" name="user_streetaddress" id="streetaddress"><br><br>
 
-                <label for="streetaddress"><strong>Street Address Line 2:</strong></label><br>
-                <input type="text" name="user_streetaddress" id="streetaddress"><br><br>
+                        <label for="streetaddress"><strong>Street Address Line 2:</strong></label><br>
+                        <input type="text" name="user_streetaddress" id="streetaddress"><br><br>
 
-                <label for="city"><strong>City:</strong></label><br>
-                <input type="text" name="user_city" id="city"><br><br>
+                        <label for="city"><strong>City:</strong></label><br>
+                        <input type="text" name="user_city" id="city"><br><br>
 
-                <label for="state"><strong>State:</strong></label><br>
-                <input type="text" name="user_state" id="state"><br><br>
+                        <label for="state"><strong>State:</strong></label><br>
+                        <input type="text" name="user_state" id="state"><br><br>
+
+                        <label for="zipcode"><strong>ZipCode:</strong></label><br>
+                        <input type="number" name="user_zipcode" id="zipcode"><br><br>
+
+                    </fieldset>
+
+                    <fieldset>
+
+                        <legend><em>Create Account</em></legend>
+
+                        <label for="email"><strong>Email:</strong></label><br>
+                        <input type="email" id="email" name="user_email"><br><br>
+
+                        <label for="password"><strong>Create Password:</strong></label><br>
+                        <input type="password" id="password" name="user_password"><br><br>
+
+                        <button type="submit">Submit</button>
+
+                    </fieldset>
 
 
-                <label for="zipcode"><strong>ZipCode:</strong></label><br>
-                <input type="number" name="user_zipcode" id="zipcode"><br><br>
+                </form>
+            </section>
+        
+        <br><br><hr>
+            
+            <section>
+                <!-- Contact Form -->
+                <form>
+                    <h1>Contact Us</h1>
 
-            </fieldset>
+                    <fieldset>
 
-            <fieldset>
+                        <label for="name"><strong>Full Name:</strong></label><br>
+                        <input type="text" name="user_name" id="name"><br><br>
 
-                <legend><em>Create Account</em></legend>
+                        <label for="email"><strong>Email:</strong></label><br>
+                        <input type="email" name="user_email" id="email"><br><br>
 
-                <label for="email"><strong>Email:</strong></label><br>
-                <input type="email" id="email" name="user_email"><br><br>
+                        <label for="message"><strong>Message:</strong></label><br>
+                        <textarea name="user_message" id="message" cols="100" rows="10"></textarea><br><br>
 
-                <label for="password"><strong>Create Password:</strong></label><br>
-                <input type="password" id="password" name="user_password"><br><br>
+                        <button type="submit">Submit</button>
 
-            </fieldset>
+                    </fieldset>
 
-            <button>Submit</button>
-
-
-        </form>
-
-        <!-- Contact Form -->
-        <form>
-
-        </form>
+                </form>
+            </section>
+        </main>
     </body>
 </html>
